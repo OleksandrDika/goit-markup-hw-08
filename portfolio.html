@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header-page header-line">
+      <div class="conteiner header-page-container">
+        <a class="logo link" href="./index.html"><span class="part-logo">Web</span>Studio</a>
+        <nav class="page-nav">
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link current menu-link-border" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu-item"><a class="menu-link link" href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="mail-contact">
+            <a class="mail link" href="mailto:info@devstudio.com">
+              <svg class="icon-convert">
+                <use href="./images/sprite.svg#icon-convert1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="phone-contact">
+            <a class="phone link" href="tel:+380961111111">
+              <svg class="icon-phone">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--MAIN-->
+    <main>
+      <section class="portfolio section">
+        <div class="conteiner">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <ul class="list list-buttons">
+            <li class="list-btn"><button class="btn-filter" type="button">Усі</button></li>
+            <li class="list-btn"><button class="btn-filter" type="button">Веб-сайти</button></li>
+            <li class="list-btn"><button class="btn-filter" type="button">Додатки</button></li>
+            <li class="list-btn"><button class="btn-filter" type="button">Дизайн</button></li>
+            <li class="list-btn"><button class="btn-filter" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="list list-pictures">
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio1d.webp,
+                        ./images/desktop/optim/portfolio1d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio1d.jpg,
+                        ./images/desktop/optim/portfolio1d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio1t.webp,
+                        ./images/tablet/optim/portfolio1t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio1t.jpg,
+                        ./images/tablet/optim/portfolio1t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio1m.webp,
+                        ./images/mobile/optim/portfolio1m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio1m.jpg,
+                        ./images/mobile/optim/portfolio1m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio1m.jpg"
+                      alt="Відкритий веб сайт на пк"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Технокряк</h2>
+                  <p class="kind-pic">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio2d.webp,
+                        ./images/desktop/optim/portfolio2d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio2d.jpg,
+                        ./images/desktop/optim/portfolio2d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio2t.webp,
+                        ./images/tablet/optim/portfolio2t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio2t.jpg,
+                        ./images/tablet/optim/portfolio2t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio2m.webp,
+                        ./images/mobile/optim/portfolio2m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio2m.jpg,
+                        ./images/mobile/optim/portfolio2m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio2m.jpg"
+                      alt="Постер баскетбольної команди"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Постер New Orlean vs Golden Star</h2>
+                  <p class="kind-pic">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio3d.webp,
+                        ./images/desktop/optim/portfolio3d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio3d.jpg,
+                        ./images/desktop/optim/portfolio3d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio3t.webp,
+                        ./images/tablet/optim/portfolio3t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio3t.jpg,
+                        ./images/tablet/optim/portfolio3t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio3m.webp,
+                        ./images/mobile/optim/portfolio3m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio3m.jpg,
+                        ./images/mobile/optim/portfolio3m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio3m.jpg"
+                      alt="Постер ресторану"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Ресторан Seafood</h2>
+                  <p class="kind-pic">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio4d.webp,
+                        ./images/desktop/optim/portfolio4d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio4d.jpg,
+                        ./images/desktop/optim/portfolio4d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio4t.webp,
+                        ./images/tablet/optim/portfolio4t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio4t.jpg,
+                        ./images/tablet/optim/portfolio4t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio4m.webp,
+                        ./images/mobile/optim/portfolio4m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio4m.jpg,
+                        ./images/mobile/optim/portfolio4m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio4m.jpg"
+                      alt="Наушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Проєкт Prime</h2>
+                  <p class="kind-pic">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio5d.webp,
+                        ./images/desktop/optim/portfolio5d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio5d.jpg,
+                        ./images/desktop/optim/portfolio5d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio5t.webp,
+                        ./images/tablet/optim/portfolio5t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio5t.jpg,
+                        ./images/tablet/optim/portfolio5t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio5m.webp,
+                        ./images/mobile/optim/portfolio5m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio5m.jpg,
+                        ./images/mobile/optim/portfolio5m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio5m.jpg"
+                      alt="Дві коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Проєкт Boxes</h2>
+                  <p class="kind-pic">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio6d.webp,
+                        ./images/desktop/optim/portfolio6d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio6d.jpg,
+                        ./images/desktop/optim/portfolio6d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio6t.webp,
+                        ./images/tablet/optim/portfolio6t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio6t.jpg,
+                        ./images/tablet/optim/portfolio6t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio6m.webp,
+                        ./images/mobile/optim/portfolio6m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio6m.jpg,
+                        ./images/mobile/optim/portfolio6m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio6m.jpg"
+                      alt="Монітор з відкритим веб сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Inspiration has no Borders</h2>
+                  <p class="kind-pic">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio7d.webp,
+                        ./images/desktop/optim/portfolio7d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio7d.jpg,
+                        ./images/desktop/optim/portfolio7d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio7t.webp,
+                        ./images/tablet/optim/portfolio7t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio7t.jpg,
+                        ./images/tablet/optim/portfolio7t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio7m.webp,
+                        ./images/mobile/optim/portfolio7m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio7m.jpg,
+                        ./images/mobile/optim/portfolio7m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio7m.jpg"
+                      alt="Відкрита книга"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Видання Limited Edition</h2>
+                  <p class="kind-pic">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio8d.webp,
+                        ./images/desktop/optim/portfolio8d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio8d.jpg,
+                        ./images/desktop/optim/portfolio8d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio8t.webp,
+                        ./images/tablet/optim/portfolio8t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio8t.jpg,
+                        ./images/tablet/optim/portfolio8t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio8m.webp,
+                        ./images/mobile/optim/portfolio8m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio8m.jpg,
+                        ./images/mobile/optim/portfolio8m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/mobile/optim/portfolio8m.jpg"
+                      alt="Лейба на нитці"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Проєкт LAB</h2>
+                  <p class="kind-pic">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="link link-picture" href="">
+                <div class="box-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio9d.webp,
+                        ./images/desktop/optim/portfolio9d@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/optim/portfolio9d.jpg,
+                        ./images/desktop/optim/portfolio9d@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio9t.webp,
+                        ./images/tablet/optim/portfolio9t@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/optim/portfolio9t.jpg,
+                        ./images/tablet/optim/portfolio9t@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio9m.webp,
+                        ./images/mobile/optim/portfolio9m@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/optim/portfolio9m.jpg,
+                        ./images/mobile/optim/portfolio9m@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/9.jpg"
+                      alt="Людина працює за ноутбуком"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="thumb">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="information">
+                  <h2 class="picture-captions">Growing Business</h2>
+                  <p class="kind-pic">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="page-bottom" id="contacts">
+      <div class="conteiner footer-conteiner">
+        <div>
+          <a class="logo link logo-foter" href="./index.html"
+            ><span class="part-logo">Web</span><span class="part-logo-w">Studio</span></a
+          >
+          <address class="our-adress adress-logo">
+            <ul class="list">
+              <li class="list-contacts">
+                <a
+                  class="link our-location"
+                  href="https://goo.gl/maps/ukndWsPq22E3wPCn8"
+                  target="_blank"
+                  rel="noopener nofolow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="list-contacts">
+                <a class="link our-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="list-contacts list-phone">
+                <a class="link our-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-section">
+          <p class="footer-join">приєднуйся</p>
+          <ul class="footer-social list">
+            <li class="footer-social-list">
+              <a class="footer-social-link" href="">
+                <svg class="icon-footer">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list">
+              <a class="footer-social-link" href="">
+                <svg class="icon-footer">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list">
+              <a class="footer-social-link" href="">
+                <svg class="icon-footer">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list">
+              <a class="footer-social-link" href="">
+                <svg class="icon-footer">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <div class="span-form">
+            <input class="footer-input" type="text" name="email" placeholder="E-mail" />
+            <span class="footer-button">
+              <button class="footer-btn-form" type="submit">
+                Підписатися
+                <svg class="footer-form-icon">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

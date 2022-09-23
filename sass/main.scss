@@ -1,0 +1,21 @@
+@import "./utils/variables.scss";
+@import "./utils/placeholders";
+@import "./base/common";
+@import "./base/section";
+@import "./base/container";
+@import "./utils/visually-hidden";
+@import "./layout/header";
+@import "./components/logo";
+@import "./layout/hero";
+@import "./layout/advantage";
+@import "./layout/work";
+@import "./layout/team";
+@import "./components/social-links";
+@import "./layout/clients";
+@import "./layout/footer";
+
+@import "./components/header-line";
+@import "./layout/portfolio-main";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
