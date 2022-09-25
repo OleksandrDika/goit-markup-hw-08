@@ -15,8 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-   
-    <link rel="stylesheet" href="./css/main.min.css">
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -34,6 +34,11 @@
             <li class="menu-item"><a class="menu-link link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contacts list">
           <li class="mail-contact">
             <a class="mail link" href="mailto:info@devstudio.com">
@@ -53,16 +58,65 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="conteiner mobile-menu__conteiner">
+          <button class="mobile-menu__close" data-menu-close>
+            <svg class="mobile-menu__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link current menu-link-border" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="contacts-mobile list">
+            <li class="contacts-mobile__phone">
+              <a class="contacts-mobile__link-phone link" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contacts-mobile__mail">
+              <a class="contacts-mobile__link-mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-mobile">
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">Instagram</a>
+            </li>
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">Twitter</a>
+            </li>
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">Facebook</a>
+            </li>
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--MAIN-->
     <main>
+      <!-- ---------------SECTION HERO ---------------->
       <section class="business-solutions">
         <div class="conteiner hero">
           <h1 class="business-solutions-one">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn-form" data-modal-open type="button">Замовити послугу</button>
         </div>
       </section>
-
+      <!----------------- SECTION OUR ADVANTAGES ------------->
       <section class="advantages section">
         <div class="conteiner">
           <h2 class="visually-hidden">Наші переваги</h2>
@@ -114,54 +168,88 @@
           </ul>
         </div>
       </section>
-      <section class="work-section section ">
+      <!---------------- WORK SECTION ------------------>
+      <section class="work-section section">
         <div class="conteiner">
           <h2 class="work-section__title">Чим ми займаємося</h2>
-          <ul class="list  work-section__list">
+          <ul class="list work-section__list">
             <li class="work-section__image">
               <picture>
                 <source
-                srcset="./images/desktop/optim/work1d.webp, ./images/desktop/optim/work1d@2x.webp 2x"                
-                type="image/webp"
-              />
-              <source
-                srcset="./images/desktop/optim/work1d.jpg, ./images/desktop/optim/work1d@2x.jpg 2x"                
-              />
-              <img src="./images/desktop/optim/work1d.jpg" alt="Кодування" width="370" height="294" />
-              </picture>              
+                  srcset="
+                    ./images/desktop/optim/work1d.webp,
+                    ./images/desktop/optim/work1d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/optim/work1d.jpg,
+                    ./images/desktop/optim/work1d@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/optim/work1d.jpg"
+                  alt="Кодування"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work-section__inscription">Десктопні додатки</p>
             </li>
             <li class="work-section__image">
               <picture>
                 <source
-                  srcset="./images/desktop/optim/work2d.webp, ./images/desktop/optim/work2d@2x.webp 2x"                
+                  srcset="
+                    ./images/desktop/optim/work2d.webp,
+                    ./images/desktop/optim/work2d@2x.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/desktop/optim/work2d.jpg, ./images/desktop/optim/work2d@2x.jpg 2x"               
+                  srcset="
+                    ./images/desktop/optim/work2d.jpg,
+                    ./images/desktop/optim/work2d@2x.jpg 2x
+                  "
                 />
-              <img src="./images/desktop/optim/work2d.jpg" alt="Діагностика" width="370" height="294" />
-              </picture>              
+                <img
+                  src="./images/desktop/optim/work2d.jpg"
+                  alt="Діагностика"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work-section__inscription">Мобільні додатки</p>
             </li>
             <li class="work-section__image">
               <picture>
                 <source
-                srcset="./images/desktop/optim/work3d.webp, ./images/desktop/optim/work3d@2x.webp 2x"                
-                type="image/webp"
-              />
-              <source
-                srcset="./images/desktop/optim/work3d.jpg, ./images/desktop/optim/work3d@2x.jpg 2x"               
-              />
-              <img src="./images/desktop/optim/work3d.jpg" alt="Тестування" width="370" height="294" />
+                  srcset="
+                    ./images/desktop/optim/work3d.webp,
+                    ./images/desktop/optim/work3d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/optim/work3d.jpg,
+                    ./images/desktop/optim/work3d@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/optim/work3d.jpg"
+                  alt="Тестування"
+                  width="370"
+                  height="294"
+                />
               </picture>
-              
+
               <p class="work-section__inscription">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
-
+      <!---------------------- TEAM --------------------------->
       <section class="team section">
         <div class="conteiner">
           <h2 class="team__title">Наша команда</h2>
@@ -169,16 +257,25 @@
             <li class="team__list">
               <picture>
                 <source
-                  srcset="./images/desktop/optim/team1d.webp, ./images/desktop/optim/team1d@2x.webp 2x"
+                  srcset="
+                    ./images/desktop/optim/team1d.webp,
+                    ./images/desktop/optim/team1d@2x.webp 2x
+                  "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/desktop/optim/team1d.jpg, ./images/desktop/optim/team1d@2x.jpg 2x"
+                  srcset="
+                    ./images/desktop/optim/team1d.jpg,
+                    ./images/desktop/optim/team1d@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/tablet/optim/team1t.webp, ./images/tablet/optim/team1t@2x.webp 2x"
+                  srcset="
+                    ./images/tablet/optim/team1t.webp,
+                    ./images/tablet/optim/team1t@2x.webp 2x
+                  "
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
@@ -187,22 +284,23 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/mobile/optim/team1m.webp, ./images/mobile/optim/team1m@2x.webp 2x"
+                  srcset="
+                    ./images/mobile/optim/team1m.webp,
+                    ./images/mobile/optim/team1m@2x.webp 2x
+                  "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
                   srcset="./images/mobile/optim/team1m.jpg, ./images/mobile/optim/team1m@2x.jpg 2x"
                   media="(max-width: 767px)"
-                 />
+                />
                 <img
-                class="team__foto"
-                src="./images/mobile/optim/team1m.jpg"
-                alt="фото Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
-              </picture>              
+                  class="team__foto"
+                  src="./images/mobile/optim/team1m.jpg"
+                  alt="фото Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__discription">
                 <h3 class="team__memders">Ігор Дем'яненко</h3>
                 <p class="team__professions">Product Designer</p>
@@ -241,16 +339,25 @@
             <li class="team__list">
               <picture>
                 <source
-                  srcset="./images/desktop/optim/team2d.webp, ./images/desktop/optim/team2d@2x.webp 2x"
+                  srcset="
+                    ./images/desktop/optim/team2d.webp,
+                    ./images/desktop/optim/team2d@2x.webp 2x
+                  "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/desktop/optim/team2d.jpg, ./images/desktop/optim/team2d@2x.jpg 2x"
+                  srcset="
+                    ./images/desktop/optim/team2d.jpg,
+                    ./images/desktop/optim/team2d@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/tablet/optim/team2t.webp, ./images/tablet/optim/team2t@2x.webp 2x"
+                  srcset="
+                    ./images/tablet/optim/team2t.webp,
+                    ./images/tablet/optim/team2t@2x.webp 2x
+                  "
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
@@ -259,22 +366,23 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/mobile/optim/team2m.webp, ./images/mobile/optim/team2m@2x.webp 2x"
+                  srcset="
+                    ./images/mobile/optim/team2m.webp,
+                    ./images/mobile/optim/team2m@2x.webp 2x
+                  "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
                   srcset="./images/mobile/optim/team2m.jpg, ./images/mobile/optim/team2m@2x.jpg 2x"
                   media="(max-width: 767px)"
-                 />
-                 <img
+                />
+                <img
                   class="team__foto"
                   src="./images/mobile/optim/team2m.jpg"
                   alt="фото Ольга Рєпіна"
-                  width="270"
-                  height="260"
-              />
-              </picture>              
+                />
+              </picture>
               <div class="team__discription">
                 <h3 class="team__memders">Ольга Рєпіна</h3>
                 <p class="team__professions">Frontend Developer</p>
@@ -313,16 +421,25 @@
             <li class="team__list">
               <picture>
                 <source
-                  srcset="./images/desktop/optim/team3d.webp, ./images/desktop/optim/team3d@2x.webp 2x"
+                  srcset="
+                    ./images/desktop/optim/team3d.webp,
+                    ./images/desktop/optim/team3d@2x.webp 2x
+                  "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/desktop/optim/team3d.jpg, ./images/desktop/optim/team3d@2x.jpg 2x"
+                  srcset="
+                    ./images/desktop/optim/team3d.jpg,
+                    ./images/desktop/optim/team3d@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/tablet/optim/team3t.webp, ./images/tablet/optim/team3t@2x.webp 2x"
+                  srcset="
+                    ./images/tablet/optim/team3t.webp,
+                    ./images/tablet/optim/team3t@2x.webp 2x
+                  "
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
@@ -331,23 +448,24 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/mobile/optim/team3m.webp, ./images/mobile/optim/team3m@2x.webp 2x"
+                  srcset="
+                    ./images/mobile/optim/team3m.webp,
+                    ./images/mobile/optim/team3m@2x.webp 2x
+                  "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
                   srcset="./images/mobile/optim/team3m.jpg, ./images/mobile/optim/team3m@2x.jpg 2x"
                   media="(max-width: 767px)"
-                 />
-                 <img
+                />
+                <img
                   class="team__foto"
                   src="./images/mobile/optim/team3m.jpg"
                   alt="фото Микола Тарасов"
-                  width="270"
-                  height="260"
-              />
+                />
               </picture>
-              
+
               <div class="team__discription">
                 <h3 class="team__memders">Микола Тарасов</h3>
                 <p class="team__professions">Marketing</p>
@@ -386,16 +504,25 @@
             <li class="team__list">
               <picture>
                 <source
-                  srcset="./images/desktop/optim/team4d.webp, ./images/desktop/optim/team4d@2x.webp 2x"
+                  srcset="
+                    ./images/desktop/optim/team4d.webp,
+                    ./images/desktop/optim/team4d@2x.webp 2x
+                  "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/desktop/optim/team4d.jpg, ./images/desktop/optim/team4d@2x.jpg 2x"
+                  srcset="
+                    ./images/desktop/optim/team4d.jpg,
+                    ./images/desktop/optim/team4d@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/tablet/optim/team4t.webp, ./images/tablet/optim/team4t@2x.webp 2x"
+                  srcset="
+                    ./images/tablet/optim/team4t.webp,
+                    ./images/tablet/optim/team4t@2x.webp 2x
+                  "
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
@@ -404,23 +531,24 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/mobile/optim/team4m.webp, ./images/mobile/optim/team4m@2x.webp 2x"
+                  srcset="
+                    ./images/mobile/optim/team4m.webp,
+                    ./images/mobile/optim/team4m@2x.webp 2x
+                  "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
                   srcset="./images/mobile/optim/team4m.jpg, ./images/mobile/optim/team4m@2x.jpg 2x"
                   media="(max-width: 767px)"
-                 />
+                />
                 <img
                   class="team__foto"
                   src="./images/mobile/optim/team4m.jpg"
                   alt="фото Михайло Єрмаков"
-                  width="270"
-                  height="260"
                 />
               </picture>
-              
+
               <div class="team__discription">
                 <h3 class="team__memders">Михайло Єрмаков</h3>
                 <p class="team__professions">UI Designer</p>
@@ -459,6 +587,7 @@
           </ul>
         </div>
       </section>
+      <!------------------------- CLIENTS --------------------------->
       <section class="section clients">
         <div class="conteiner">
           <h2 class="usually-clients">Постійні клієнти</h2>
@@ -509,83 +638,90 @@
         </div>
       </section>
     </main>
-    <!--FOOTER-->
+    <!-----------------------------FOOTER--------------------------->
     <footer class="page-bottom" id="contacts">
       <div class="conteiner footer-conteiner">
-        <div>
-          <a class="logo link logo-foter" href="./index.html"
-            ><span class="part-logo">Web</span><span class="part-logo-w">Studio</span></a
-          >
-          <address class="our-adress adress-logo">
-            <ul class="list">
-              <li class="list-contacts">
-                <a
-                  class="link our-location"
-                  href="https://goo.gl/maps/ukndWsPq22E3wPCn8"
-                  target="_blank"
-                  rel="noopener nofolow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-optimized">
+          <div class="footer-conteiner-adress">
+            <a class="logo link logo-foter logo-footer-mobile" href="./index.html"
+              ><span class="part-logo">Web</span><span class="part-logo-w">Studio</span></a
+            >
+            <address class="our-adress adress-logo">
+              <ul class="list">
+                <li class="list-contacts">
+                  <a
+                    class="link our-location our-location-mobile"
+                    href="https://goo.gl/maps/ukndWsPq22E3wPCn8"
+                    target="_blank"
+                    rel="noopener nofolow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="list-contacts">
+                  <a class="link our-contacts our-contacts-mobile" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="list-contacts list-phone">
+                  <a class="link our-contacts our-contacts-mobile" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-section">
+            <p class="footer-join">приєднуйся</p>
+            <ul class="footer-social list">
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list-contacts">
-                <a class="link our-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list-contacts list-phone">
-                <a class="link our-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="social-section">
-          <p class="footer-join">приєднуйся</p>
-          <ul class="footer-social list">
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer-form">
           <p class="footer-form-title">Підпишіться на розсилку</p>
           <form class="span-form">
             <input class="footer-input" type="text" name="email" placeholder="E-mail" required />
-            
-              <button class="footer-btn-form" type="submit">
-                Підписатися
-                <svg class="footer-form-icon">
-                  <use href="./images/sprite.svg#icon-send"></use>
-                </svg>
-              </button>
-            
+
+            <button class="footer-btn-form" type="submit">
+              Підписатися
+              <svg class="footer-form-icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!------------------------ MODAL WINDOW ------------------->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form>
           <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
@@ -650,7 +786,9 @@
           </svg>
         </button>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -7,8 +7,8 @@
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 36px;
-line-height: 42px;
+font-size: 28px;
+line-height: 33px;
 text-align: center;
 letter-spacing: 0.03em;
 
@@ -18,6 +18,7 @@ margin-bottom: 50px;
 
 .our-clients {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -27,10 +28,8 @@ margin-bottom: 50px;
     // display: flex;
     // align-items: center;
     // justify-content: center;
-    width: 170px;
-    height: 92px;
-    width: 170px;
-    height: 92px;
+    width: 210px;
+    height: 92px;    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
@@ -77,3 +76,17 @@ margin-bottom: 50px;
     width: 94px;
     height: 44px;   
  }
+
+@media screen and (min-width: 768px) {
+    .usual-client-link {
+        width: 226px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .usual-client-link {
+        width: 170px;
+    }
+
+}
