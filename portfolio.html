@@ -26,16 +26,19 @@
         <nav class="page-nav">
           <ul class="menu list">
             <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Студія</a>
+              <a class="menu-link link current menu-link-border" href="./index.html">Студія</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link current menu-link-border" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu-item"><a class="menu-link link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contacts list">
           <li class="mail-contact">
             <a class="mail link" href="mailto:info@devstudio.com">
@@ -54,6 +57,54 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="conteiner mobile-menu__conteiner">
+          <button class="mobile-menu__close" data-menu-close>
+            <svg class="mobile-menu__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link current menu-link-border" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="contacts-mobile list">
+            <li class="contacts-mobile__phone">
+              <a class="contacts-mobile__link-phone link" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contacts-mobile__mail">
+              <a class="contacts-mobile__link-mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-mobile">
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">Instagram</a>
+            </li>
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">Twitter</a>
+            </li>
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">Facebook</a>
+            </li>
+            <li class="social-mobile__list list">
+              <a class="social-mobile__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--MAIN-->
@@ -121,7 +172,6 @@
                     <img
                       src="./images/mobile/optim/portfolio1m.jpg"
                       alt="Відкритий веб сайт на пк"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -190,7 +240,6 @@
                     <img
                       src="./images/mobile/optim/portfolio2m.jpg"
                       alt="Постер баскетбольної команди"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -259,7 +308,6 @@
                     <img
                       src="./images/mobile/optim/portfolio3m.jpg"
                       alt="Постер ресторану"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -325,12 +373,7 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img
-                      src="./images/mobile/optim/portfolio4m.jpg"
-                      alt="Наушники"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/mobile/optim/portfolio4m.jpg" alt="Наушники" height="294" />
                   </picture>
 
                   <p class="thumb">
@@ -397,7 +440,6 @@
                     <img
                       src="./images/mobile/optim/portfolio5m.jpg"
                       alt="Дві коробки"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -466,7 +508,6 @@
                     <img
                       src="./images/mobile/optim/portfolio6m.jpg"
                       alt="Монітор з відкритим веб сайтом"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -535,7 +576,6 @@
                     <img
                       src="./images/mobile/optim/portfolio7m.jpg"
                       alt="Відкрита книга"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -604,7 +644,6 @@
                     <img
                       src="./images/mobile/optim/portfolio8m.jpg"
                       alt="Лейба на нитці"
-                      width="370"
                       height="294"
                     />
                   </picture>
@@ -670,12 +709,7 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img
-                      src="./images/9.jpg"
-                      alt="Людина працює за ноутбуком"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/9.jpg" alt="Людина працює за ноутбуком" height="294" />
                   </picture>
 
                   <p class="thumb">
@@ -697,77 +731,83 @@
     <!--FOOTER-->
     <footer class="page-bottom" id="contacts">
       <div class="conteiner footer-conteiner">
-        <div>
-          <a class="logo link logo-foter" href="./index.html"
-            ><span class="part-logo">Web</span><span class="part-logo-w">Studio</span></a
-          >
-          <address class="our-adress adress-logo">
-            <ul class="list">
-              <li class="list-contacts">
-                <a
-                  class="link our-location"
-                  href="https://goo.gl/maps/ukndWsPq22E3wPCn8"
-                  target="_blank"
-                  rel="noopener nofolow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-optimized">
+          <div class="footer-conteiner-adress">
+            <a class="logo link logo-foter logo-footer-mobile" href="./index.html"
+              ><span class="part-logo">Web</span><span class="part-logo-w">Studio</span></a
+            >
+            <address class="our-adress adress-logo">
+              <ul class="list">
+                <li class="list-contacts">
+                  <a
+                    class="link our-location our-location-mobile"
+                    href="https://goo.gl/maps/ukndWsPq22E3wPCn8"
+                    target="_blank"
+                    rel="noopener nofolow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="list-contacts">
+                  <a class="link our-contacts our-contacts-mobile" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="list-contacts list-phone">
+                  <a class="link our-contacts our-contacts-mobile" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-section">
+            <p class="footer-join">приєднуйся</p>
+            <ul class="footer-social list">
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list-contacts">
-                <a class="link our-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list-contacts list-phone">
-                <a class="link our-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="">
+                  <svg class="icon-footer">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-section">
-          <p class="footer-join">приєднуйся</p>
-          <ul class="footer-social list">
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="">
-                <svg class="icon-footer">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="footer-form">
-          <p class="footer-form-title">Підпишіться на розсилку</p>
-          <div class="span-form">
-            <input class="footer-input" type="text" name="email" placeholder="E-mail" />
-            <span class="footer-button">
-              <button class="footer-btn-form" type="submit">
-                Підписатися
-                <svg class="footer-form-icon">
-                  <use href="./images/sprite.svg#icon-send"></use>
-                </svg>
-              </button>
-            </span>
           </div>
-        </form>
+        </div>
+
+        <div class="footer-form">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <form class="span-form">
+            <input class="footer-input" type="text" name="email" placeholder="E-mail" required />
+
+            <button class="footer-btn-form" type="submit">
+              Підписатися
+              <svg class="footer-form-icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

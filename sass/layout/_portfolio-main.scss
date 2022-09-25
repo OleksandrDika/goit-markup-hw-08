@@ -4,6 +4,18 @@
     margin-bottom: 50px;
    
 }
+@media screen and (max-width: 768px) {
+    .list-buttons {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 50px;
+       
+    }
+
+}
+
 
 
 .list-btn:not(:last-child) {
@@ -48,6 +60,15 @@ transition: background-color var(--transition-const), color var(--transition-con
     padding: 20px 24px;
 }
 
+@media screen and (min-width: 768px) {
+    .information {
+        
+        padding: 20px 18px;
+    }
+}
+
+
+
 .picture-captions { 
 font-weight: 700;
 font-size: 18px;
@@ -72,6 +93,22 @@ color: var(--second-text-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 }
+@media screen and (max-width: 768px) {
+    .link-picture {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .link-picture {
+        width: 354px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .link-picture {
+        width: 370px;
+    }
+}
+
 
 
 
