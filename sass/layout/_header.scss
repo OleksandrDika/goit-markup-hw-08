@@ -21,6 +21,8 @@
 .header-page {
     padding-top: 16px;
 }
+
+
 @media screen and (max-width: 768px){
  .header-page-container {
     display: flex;
@@ -200,22 +202,22 @@
 
 // }
 
-// .menu-link-border {
-//     position: relative;
-// }
+.menu-link-border {
+    position: relative;
+}
 
-// .menu-link-border::after {
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     height: 4px;
-//     background-color: #2196F3;
-//     border-radius: 4px;
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
+.menu-link-border::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     
-// }
+}
 
 // .icon-convert {
 //     width: 16px;
@@ -233,9 +235,9 @@
 
 
 
-// .current {
-//     color: var(--accent-color);
-// }
+.current {
+    color: var(--accent-color);
+}
 
 
 // .mail,

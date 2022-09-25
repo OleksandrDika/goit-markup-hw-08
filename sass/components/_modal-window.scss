@@ -1,3 +1,5 @@
+
+
 .modal {
     position: absolute;
     width: 528px;
@@ -9,6 +11,15 @@
     padding: 40px;
     
 }
+
+@media screen and (max-width: 1200px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+
+}
+
 .modal-close-icon {
     width: 18px;
     height: 18px;
