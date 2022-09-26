@@ -1,26 +1,44 @@
 .list-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    
    
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .list-buttons {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 8px;
-        margin-bottom: 50px;
+        row-gap: 15px;
+        margin-bottom: 40px;
        
     }
 
 }
 
+@media screen and (min-width: 768px) {
+    .list-buttons {
+        display: flex;
+        
+        flex-wrap: wrap;
+        gap: 8px;
+        row-gap: 15px;
+        margin-bottom: 30px;
+       
+    }
 
-
-.list-btn:not(:last-child) {
-    margin-right: 8px;
 }
+
+@media screen and (min-width: 1200px) {
+    .list-buttons {
+        margin-bottom: 50px;
+    }
+}
+
+// .list-btn:not(:last-child) {
+//     margin-right: 8px;
+// }
 
 .list-pictures {
     display: flex;
@@ -95,17 +113,17 @@ color: var(--second-text-color);
 }
 @media screen and (max-width: 768px) {
     .link-picture {
-        width: 450px;
+        width: 100%;
     }
 }
 @media screen and (min-width: 768px) {
     .link-picture {
-        width: 354px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1200px) {
     .link-picture {
-        width: 370px;
+        width: 100%;
     }
 }
 
@@ -128,7 +146,7 @@ color: #FFFFFF;
     top: 0;
     left: 0;
     overflow: auto;
-    transform: translateY(100%);
+    transform: translateY(101%);
   transition: transform var(--transition-const);
 }
 

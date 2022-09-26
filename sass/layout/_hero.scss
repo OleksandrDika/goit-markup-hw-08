@@ -1,5 +1,6 @@
 .business-solutions {
-    width: 480px;
+    max-width: 480px;
+    
     height: 400px;
     background-color:var(--bg-color);
     margin: 0 auto;
@@ -45,7 +46,7 @@
     }
  @media screen and (min-width: 768px) {
     .business-solutions {
-        width: 768px;
+        max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/optim/herot.jpg);
 
     }
@@ -56,7 +57,7 @@
 
  @media screen and (min-width: 1200px) {
     .business-solutions {
-        width: 1600px;
+        max-width: 1600px;
         height: 600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/optim/herod.jpg);
         padding-top: 200px;
