@@ -77,6 +77,12 @@ body {
   padding-right: 15px;
 }
 
+@media screen and (max-width: 479px) {
+  .conteiner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
