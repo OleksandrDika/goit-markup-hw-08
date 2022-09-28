@@ -82,6 +82,8 @@ body {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -324,6 +326,9 @@ body {
   position: relative;
   padding-left: 40px;
   padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .mobile-menu__link {
@@ -349,7 +354,7 @@ body {
 }
 
 .mobile-menu__list {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .contacts-mobile__link-phone {
@@ -378,6 +383,7 @@ body {
 
 .social-mobile {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-mobile__link {
@@ -397,6 +403,7 @@ body {
 
 .social-mobile__list:not(:first-child) {
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .contacts-mobile__mail {
@@ -527,6 +534,11 @@ body {
   display: inline;
 }
 
+@media screen and (max-width: 768px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .list-advantages {
     display: flex;
@@ -1173,10 +1185,22 @@ body {
   padding: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 300px;
+    height: 650px;
+  }
+}
+@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 609px;
+    height: 603px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 .modal-close-icon {
